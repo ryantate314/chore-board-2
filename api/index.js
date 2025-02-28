@@ -7,7 +7,7 @@ app.use(cors());
 
 app.get('/tasks', (req, res) => {
   const tasks = [
-    { id: "1", name: 'Product A' },
+    { id: "1", name: 'Product A', lastCompletedDate: '2025-02-20T12:34:00.000'},
     { id: "2", name: 'Product B' }
   ];
   res.json(tasks);

@@ -1,4 +1,7 @@
-<p>home works!</p>
-@for (task of tasks$ | async; track $index) {
-   <div>{{task.name}}</div> 
-}
+<div class="p-4">
+   <div class="flex gap-4">
+      @for (task of tasks$ | async; track $index) {
+         <app-task-card [task]="task"></app-task-card>
+      }
+   </div>
+</div>

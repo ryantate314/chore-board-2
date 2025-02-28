@@ -7,6 +7,7 @@ export interface Task {
     name: string;
     id: string;
     description: string | null;
+    lastCompletedDate: Date | null;
 }
 
 export interface TaskState {

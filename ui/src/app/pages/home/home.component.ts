@@ -5,11 +5,13 @@ import { Observable } from 'rxjs';
 import { Task } from '../../reducers/task.reducer';
 import { TaskActions } from '../../actions/task.actions';
 import { AsyncPipe } from '@angular/common';
+import { TaskCardComponent } from '../../components/task-card/task-card.component';
 
 @Component({
   selector: 'app-home',
   imports: [
-    AsyncPipe
+    AsyncPipe,
+    TaskCardComponent
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
